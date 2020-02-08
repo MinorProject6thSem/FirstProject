@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Time Table Generator</title>
+  <link rel="stylesheet" type="text/css" href="AddCourse.css">
+  <link rel="stylesheet" type="text/css" href="Bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron upper">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand">Add courses</a></div>
+          <ul class="nav navbar-nav">
+
+            <li class="active lol"><a href="#">Add Teachers</a></li>
+            <li><a href="#" class="lol left">AddClass Room</a></li>
+            <li><a href="#" class="lol left">Create Time Table</a></li>
+            <li><a href="#" class="lol left">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container mark">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="AddCourse">Add Course:</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="addCourse" placeholder="Enter Course">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="subjectno">No of subjects:-</label><br>
+            <select id="subjects">
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+
+          <div id="myDiv">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject1">Subject 1 Name:-</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="subject1" placeholder="Enter Subject 1">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="subject1">Subject 1 Teacher:-</label><br>
+              <select id="subject1Teachers">
+                <option value="1">Ram kumar</option>
+                <option value="2">Ajay Anand</option>
+                <option value="3">Abhishek Ray</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject1Priority">Priority:-</label><br>
+              <select id="subject1Priority">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject2">Subject 2 Name:-</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="subject2" placeholder="Enter Subject 2">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="subject2">Subject 2 Teacher:-</label><br>
+              <select id="subject2Teachers">
+                <option value="1">Ram kumar</option>
+                <option value="2">Ajay Anand</option>
+                <option value="3">Abhishek Ray</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject2Priority">Priority:-</label><br>
+              <select id="subject2Priority">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject3">Subject 3 Name:-</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="subject3" placeholder="Enter Subject 3">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="subject3">Subject 3 Teacher:-</label><br>
+              <select id="subject3Teachers">
+                <option value="1">Ram kumar</option>
+                <option value="2">Ajay Anand</option>
+                <option value="3">Abhishek Ray</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject3Priority">Priority:-</label><br>
+              <select id="subject2Priority">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject4">Subject 4 Name:-</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="subject4" placeholder="Enter Subject 4">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="subject4">Subject 4 Teacher:-</label><br>
+              <select id="subject3Teachers">
+                <option value="1">Ram kumar</option>
+                <option value="2">Ajay Anand</option>
+                <option value="3">Abhishek Ray</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="subject4Priority">Priority:-</label><br>
+              <select id="subject2Priority">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success active" onclick="myfunction()">Submit</button>
+              </div>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
