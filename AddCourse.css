@@ -26,6 +26,36 @@ body{
 	text-align: center;
 	padding-left: 500px;
 }
+label{
+	margin-left:100px;
+}
+.subject1Teachers{
+	margin-top: 10px;
+}
+.subject2Teachers{
+	margin-top: 10px;
+}
+.subject3Teachers{
+	margin-top: 10px;
+}
+.subject4Teachers{
+	margin-top: 10px;
+}
+.subject1Priority{
+	margin-top: 10px;
+}
+.subject2Priority{
+	margin-top: 10px;
+}
+.subject3Priority{
+	margin-top: 10px;
+}
+.subject4Priority{
+	margin-top: 10px;
+}
+.subjectno{
+	margin-top: 10px;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -63,4 +93,7 @@ body{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+.bt{
+	margin-left: 42%;
 }
