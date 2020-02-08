@@ -1,0 +1,24 @@
+body{
+	background: url(https://media.istockphoto.com/videos/white-clocks-flying-black-background-loopable-video-id159125058?s=640x640);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+.upper{
+	margin-top: 50px;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+.lol{
+	padding-left:50px;
+	padding-right: 50px;
+}
+.left{
+	padding-left:50px;
+}
+
+.mark{
+	padding-left:100px;
+	margin-left:100px;
+  display:inline-block;
+}
