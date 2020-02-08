@@ -1,0 +1,50 @@
+
+#upper{
+	height: 300px;
+	background: url(http://bestanimations.com/HomeOffice/Clocks/clock-animated-gif-33.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: top;
+    margin-top: 0px;
+}
+#upper p{
+	font-size: 20px;
+	font-weight: 800;
+	font-family: arial;
+}
+#mid{
+	height: 30px;
+	background-color: rgba(200,100.240,.8);
+}
+.classA{
+	padding-left: 130px;
+	padding-right: 200px;
+	margin: 2.66%;
+	font-family: arial;
+	font-weight: 600;
+}
+.place{
+	text-align: center;
+    margin:30px;
+    word-spacing: 30px;
+}
+/*body{
+	background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QVO43jYEGJWAwMYaGy9JDe2CkA6b0FG35d3CQIEDYbIWGboX&s);
+	background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+/*#last p{
+	font-weight: 800;
+	font-size: 20px;
+}*/
+
+
+#email{
+	width:50%;
+}
+
+
+#pwd{
+	width:50%;
+}
