@@ -16,14 +16,26 @@ body{
 .left{
 	padding-left:50px;
 }
-
+label{
+	margin-left: 300px;
+	margin-top: 10px;
+}
+#subject1{
+	margin-top: 20px;
+}
+#subject2{
+	margin-top: -15px;
+}
+#subjects{
+	margin-top: 10px;
+}
 .mark{
 	padding-left:100px;
 	margin-left:100px;
   display:inline-block;
 }
-.form horizontal{
-	
+.bt{
+	margin-left: 45%;
 }
 .sidenav {
   height: 100%;
