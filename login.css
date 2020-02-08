@@ -1,11 +1,15 @@
 
+
 #upper{
-	height: 300px;
+    height: 300px;
 	background: url(http://bestanimations.com/HomeOffice/Clocks/clock-animated-gif-33.gif);
     background-repeat: no-repeat;
     background-size: cover;
     float: top;
     margin-top: 0px;
+    transition: 0.2s;
+
+    
 }
 #upper p{
 	font-size: 20px;
@@ -48,3 +52,42 @@
 #pwd{
 	width:50%;
 }
+
+.last{
+	overflow-y: scroll;
+	height: 300px;
+	float: bottom;
+	padding: 30px;
+	width: 100%
+	font-family: Source Sans Pro;
+
+}
+
+
+
+
+
+
+.about{
+	border-left: 5px solid #bdc3c7;
+	padding-left:5px;
+}
+
+h2{
+	color:  #2c3e50;
+	font-size: 2.0rem;
+}
+
+hr.style1 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+#post{
+	margin-bottom: 20px;
+}
+
