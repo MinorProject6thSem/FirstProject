@@ -10,29 +10,61 @@
 <body>
   <div class="container">
     <div class="jumbotron upper">
-      <nav class="navbar navbar-inverse">
+      <!--<nav class="navbar navbar-inverse">
         <div class="container">
           <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>s
             <a href="#" class="navbar-brand">Add courses</a></div>
-          <ul class="nav navbar-nav">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
 
-            <li class="active lol"><a href="#">Add Teachers</a></li>
-            <li><a href="#" class="lol left">AddClass Room</a></li>
-            <li><a href="#" class="lol left">Create Time Table</a></li>
-            <li><a href="#" class="lol left">Logout</a></li>
-          </ul>
-        </div>
+              <li class="active lol"><a href="#">Add Teachers</a></li>
+              <li><a href="#" class="lol left">AddClass Room</a></li>
+              <li><a href="#" class="lol left">Create Time Table</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="lol left ">Logout</a></li>
+            </ul>
+          </div>
       </nav>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Add Course</a>
+        <a href="#">Add Teacher</a>
+        <a href="#">Add Classroom</a>
+        <a href="#">Create Time Table</a>
+        <a href="#">Logout</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
       <div class="container mark">
         <form class="form-horizontal">
           <div class="form-group">
-            <label class="control-label col-sm-2" for="AddCourse">Add Course:</label>
+            <label class="control-label col-sm-3 lola" for="AddCourse">Add Course:</label>
             <div class="col-sm-5">
-              <input type="text" class="form-control" id="addCourse" placeholder="Enter Course">
+              <input type="text" class="form-control lola" id="addCourse" placeholder="Enter Course">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="subjectno">No of subjects:-</label><br>
+            <label class="control-label col-sm-3" for="subjectno">No of subjects:-</label><br>
             <select id="subjects">
               <option value="4">4</option>
               <option value="5">5</option>
@@ -43,7 +75,7 @@
 
           <div id="myDiv">
             <div class="form-group">
-              <label class="control-label col-sm-2" for="subject1">Subject 1 Name:-</label>
+              <label class="control-label col-sm-3" for="subject1">Subject 1 Name:-</label>
               <div class="col-sm-5">
                 <input type="text" class="form-control" id="subject1" placeholder="Enter Subject 1">
               </div>
@@ -66,7 +98,7 @@
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-2" for="subject2">Subject 2 Name:-</label>
+              <label class="control-label col-sm-3" for="subject2">Subject 2 Name:-</label>
               <div class="col-sm-5">
                 <input type="text" class="form-control" id="subject2" placeholder="Enter Subject 2">
               </div>
@@ -89,7 +121,7 @@
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-2" for="subject3">Subject 3 Name:-</label>
+              <label class="control-label col-sm-3" for="subject3">Subject 3 Name:-</label>
               <div class="col-sm-5">
                 <input type="text" class="form-control" id="subject3" placeholder="Enter Subject 3">
               </div>
@@ -112,7 +144,7 @@
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-2" for="subject4">Subject 4 Name:-</label>
+              <label class="control-label col-sm-3" for="subject4">Subject 4 Name:-</label>
               <div class="col-sm-5">
                 <input type="text" class="form-control" id="subject4" placeholder="Enter Subject 4">
               </div>
