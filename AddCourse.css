@@ -53,8 +53,26 @@ label{
 .subject4Priority{
 	margin-top: 10px;
 }
+.subject5Priority{
+	margin-top: 10px;
+}
+.subject6Priority{
+	margin-top: 10px;
+}
+.subject7Priority{
+	margin-top: 10px;
+}
 .subjectno{
 	margin-top: 10px;
+}
+#div5{
+	display: none;
+}
+#div6{
+	display: none;
+}
+#div7{
+	display: none;
 }
 .sidenav {
   height: 100%;
