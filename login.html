@@ -1,11 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Time Table Generator</title>
-	<link rel="stylesheet" type="text/css" href="login.css">
-	<link rel="stylesheet" type="text/css" href="Bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/login.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.css' %}">
 </head>
-
 <body>
 
 	<div id="upper">
@@ -27,30 +27,30 @@
 	<ul class="nav navbar-nav navbar-right">
     
 		<li class="active"><a href="about.html">About</a></li>
-		<li><a href="login.html">Login</a></li>
-		<li><a href="signup.html">SignUp</a></li>
+		<li><a href="login">Login</a></li>
+		<li><a href="signup">SignUp</a></li>
 	</ul>
 	</div>
     </div>
 	</nav>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+	<script src="{% static 'js/jquery-3.4.1.js' %}" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
     
     <div class="last" >
-    	<form class="form-horizontal" id="login" >
-			<h2> Login </h2>
+    	<form action="login" method="post" class="form-horizontal" id="login" >
+      <h2> Login </h2>
   <div class="form-group">
-    <label class="control-label col-sm-2" for="email">Email Id:</label>
+    {% csrf_token %}
+    <label class="control-label col-sm-2" for="username">Username:</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
+      <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username">
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <label class="control-label col-sm-2" for="password">Password:</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password ">
+      <input type="password" class="form-control" name="password" id="password" placeholder="Enter password ">
     </div>
   </div>
   
@@ -62,16 +62,12 @@
   </div>
 <hr class="style1">
 <br>
-</form>
-
-	
-
-
-
-		
+</form>	
+</div>	
+<div>
+  {% for message in messages %}
+  <h3>{{message}}</h3>
+  {% endfor %}       
 </div>
-
-
-	
 </body>
 </html>
