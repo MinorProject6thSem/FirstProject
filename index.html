@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Time Table Generator</title>
-	<link rel="stylesheet" type="text/css" href="login.css">
-	<link rel="stylesheet" type="text/css" href="Bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/login.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.css' %}">
 </head>
 <body scroll="no" style="overflow: hidden;">
     <div id="upper">
@@ -38,14 +39,19 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav navbar-right">
 		<li class="active"><a href="about.html">About</a></li>
-		<li><a href="login.html">Login</a></li>
-		<li><a href="signup.html">SignUp</a></li>
+		{% if user.is_authenticated %}
+		<li>Hello, {{user.username}}</li>
+		<li><a href="accounts/logout">Logout</a></li>
+		{% else %}
+		<li><a href="accounts/login">Login</a></li>
+		<li><a href="accounts/signup">SignUp</a></li>
+		{% endif %}
 	</ul>
 	</div>
     </div>
 	</nav>	
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    <script src="{% static 'js/jquery-3.4.1.js' %}" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}" 
   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<div class="last" >
 		<!--<p class="place"><label>ID  &nbsp;<input class="space" type="text" name="" placeholder="enter your name" required></label></p>
