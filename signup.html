@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Time Table Generator</title>
-	<link rel="stylesheet" type="text/css" href="login.css">
-	<link rel="stylesheet" type="text/css" href="signup.css">
-	<link rel="stylesheet" type="text/css" href="Bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/login.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/signup.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.css' %}">
 </head>
 
 <body>
@@ -27,30 +28,33 @@
 	<ul class="nav navbar-nav navbar-right">
     
 		<li class="active"><a href="about.html">About</a></li>
-		<li><a href="login.html">Login</a></li>
-		<li><a href="signup.html">SignUp</a></li>
+		<li><a href="login">Login</a></li>
+		<li><a href="signup">SignUp</a></li>
 	</ul>
 	</div>
     </div>
 	</nav>	
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    <script src="{% static 'js/jquery-3.4.1.js' %}" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}" 
   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <div class="last" >
-    	<form action="action_page.php" style="border:1px solid #ccc">
-  <div class="container">
+    	<form action="signup" method="post" style="border:1px solid #ccc">
+    <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
+    {% csrf_token %}
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required><br>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="email" placeholder="Enter Email" name="email" required><br>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="password1"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password1" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <label for="password2"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="password2" required>
 
     <!--<label>
       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -66,7 +70,11 @@
 </form>
 
 </div>
-
+<div>
+  {% for message in messages %}
+  <h3>{{message}}</h3>
+  {% endfor %}       
+</div>
 
 </body>
 </html>
