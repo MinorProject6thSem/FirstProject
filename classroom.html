@@ -9,6 +9,7 @@
     function changeFunc() {
       var selectBox = document.getElementById("selectBox");
       var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        
       if (selectedValue === "2") {
         div6.style.display = "block";
       } else {
@@ -51,15 +52,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>s
-            <a href="AddCourse.html" class="navbar-brand">Add courses</a></div>
+            <a href="#" class="navbar-brand">Add courses</a></div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active lol"><a href="AddTeacher.html">Add Teachers</a></li>
-              <li><a href="classroom.html" class="lol left">Add Classroom</a></li>
-              <li><a href="CreateTimeTable.html" class="lol left">Create Time Table</a></li>
+              <li class="active lol"><a href="#">Add Teachers</a></li>
+              <li><a href="#" class="lol left">AddClass Room</a></li>
+              <li><a href="#" class="lol left">Create Time Table</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="login.html" class="lol left ">Logout</a></li>
+              <li><a href="#" class="lol left ">Logout</a></li>
             </ul>
           </div>
       </nav>
@@ -68,11 +69,11 @@
     -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="AddCourse.html">Add Course</a>
-        <a href="AddTeacher.html">Add Teacher</a>
-        <a href="classroom.html">Add Classroom</a>
-        <a href="CreateTimeTable.html">Create Time Table</a>
-        <a href="login.html">Logout</a>
+        <a href="#">Add Course</a>
+        <a href="#">Add Teacher</a>
+        <a href="#">Add Classroom</a>
+        <a href="#">Create Time Table</a>
+        <a href="#">Logout</a>
       </div>
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
@@ -126,7 +127,7 @@
             </select>
           </div>
           <!--</div>-->
-          <div id="div6">
+          <div id="div6" >
           <div class="form-group">
             <label class="control-label col-sm-3" for="subject2">Room no 2:-</label>
             <select class="subject2Teachers">
@@ -144,7 +145,7 @@
             </select>
           </div>
           </div>
-          <div id="div7">
+          <div id="div7" >
           <div class="form-group">
             <label class="control-label col-sm-3" for="subject3">Room no 3:-</label>
             <select class="subject3Teachers">
@@ -162,7 +163,7 @@
             </select>
           </div>
           </div>
-          <div id="div8">
+          <div id="div8" >
           <div class="form-group">
             <label class="control-label col-sm-3" for="subject4">Room no 4:-</label>
             <select class="subject4Teachers">
@@ -206,7 +207,6 @@
               </select>
             </div>
           </div>
-
           <div id="div6">
             <div class="form-group">
               <label class="control-label col-sm-3" for="subject6">Subject 6 Name:-</label>
@@ -231,7 +231,6 @@
               </select>
             </div>
           </div>
-
           <div id="div7">
             <div class="form-group">
               <label class="control-label col-sm-3" for="subject7">Subject 7 Name:-</label>
