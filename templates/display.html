@@ -1,0 +1,91 @@
+{% load static %}
+<!doctype html>
+<html>
+  <body>
+
+    <table border="1" style="width:800px">
+    {% for s1 in details1 %}
+      <tr>
+        <td>   {{ s1.section1 }} </td>
+     
+        <td>   {{ s1.section2 }} </td>
+      
+        <td>   {{ s1.section3 }} </td>
+      
+        <td>   {{ s1.section4 }} </td>
+
+      </tr>
+      {% endfor %}           
+    </table>
+    <table border="1" style="width:800px">
+      {% for s2 in details2 %}
+        <tr>
+          <td>   {{ s2.section1 }} </td>
+       
+          <td>   {{ s2.section2 }} </td>
+        
+          <td>   {{ s2.section3 }} </td>
+        
+          <td>   {{ s2.section4 }} </td>
+          
+        </tr>
+        {% endfor %}           
+      </table>
+      <table border="1" style="width:800px">
+        {% for s3 in details3 %}
+          <tr>
+            <td>   {{ s3.section1 }} </td>
+         
+            <td>   {{ s3.section2 }} </td>
+          
+            <td>   {{ s3.section3 }} </td>
+          
+            <td>   {{ s3.section4 }} </td>
+            
+          </tr>
+          {% endfor %}           
+        </table>
+        <table border="1" style="width:800px">
+          {% for s4 in details4 %}
+            <tr>
+              <td>   {{ s4.section1 }} </td>
+           
+              <td>   {{ s4.section2 }} </td>
+            
+              <td>   {{ s4.section3 }} </td>
+            
+              <td>   {{ s4.section4 }} </td>
+              
+            </tr>
+            {% endfor %}           
+          </table>
+          <table border="1" style="width:800px">
+            {% for s5 in details5 %}
+              <tr>
+                <td>   {{ s5.section1 }} </td>
+             
+                <td>   {{ s5.section2 }} </td>
+              
+                <td>   {{ s5.section3 }} </td>
+              
+                <td>   {{ s5.section4 }} </td>
+                
+              </tr>
+              {% endfor %}           
+            </table>
+            <table border="1" style="width:800px">
+              {% for s6 in details6 %}
+                <tr>
+                  <td>   {{ s6.section1 }} </td>
+               
+                  <td>   {{ s6.section2 }} </td>
+                
+                  <td>   {{ s6.section3 }} </td>
+                
+                  <td>   {{ s6.section4 }} </td>
+                  
+                </tr>
+                {% endfor %}           
+              </table>
+  </body>
+</html>
